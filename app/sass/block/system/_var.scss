@@ -1,0 +1,9 @@
+$font_family_lato_bold: 'Lato-Bold', Arial, sans-serif;
+$font_family_lato_regular: 'Lato-Regular', Arial, sans-serif;
+$font_size_main: 16px;
+$font_size_mobile: 14px;
+$color_bg: #006665;
+$main_color: #5B5B5B;
+$color_white: #ffffff;
+$breakpoint_query: (xs: 0, xss: 321px, xsm:375px, xsi: 421px, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xls: 1366px, xlm: 1441px, xlg: 1601px);
+$grid-breakpoints: $breakpoint_query;

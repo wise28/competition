@@ -1,0 +1,89 @@
+a {
+  &:hover {
+    text-decoration: none;
+  }
+
+}
+body {
+  font-family: $font_family_lato_regular;
+}
+.header {
+  background-color: $color_bg;
+}
+.logo__link {
+  color: $color_white;
+  text-transform: uppercase;
+  font-family: $font_family_lato_bold;
+  font-size: 32px;
+  border-bottom: 1px solid transparent;
+  &:hover {
+    color: $color_white;
+    border-bottom: 1px solid $color_white;
+  }
+}
+.menu {
+  font-size: 18px;
+}
+.navbar-dark .navbar-toggler {
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+.navbar-toggler {
+  padding: 0;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: $color_white;
+  border-bottom: 1px solid transparent;
+  &:hover {
+    color: $color_white;
+    border-bottom: 1px solid $color_white;
+  }
+}
+.navbar-dark .navbar-toggler-icon {
+  //background: url("../img/burger.svg");
+  background: none;
+}
+.navbar-collapse {
+  @include media-breakpoint-down(lg) {
+    position: absolute;
+    background-color: $color_bg;
+    top: 100%;
+    margin-top: 20px;
+    right: 0;
+    text-align: center;
+    width: auto!important;
+    z-index: 5;
+  }
+}
+
+.menu-mobile{
+  height: 30px;
+  width: 40px;
+  position: relative;
+  margin:auto;
+  border:5px solid transparent;
+  border-radius: 100%;
+  transition: .3s;
+  cursor: pointer;
+}
+.bar{
+  height: 2px;
+  width: 30px;
+  display: block;
+  margin: 7px auto;
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+   transition: .2s;
+}
+
+.menu-mobile-active {
+
+    &:nth-of-type(1){ transform: (translateY(9px) rotate(45deg));}
+    &:nth-of-type(2){ opacity: 0;}
+    &:nth-of-type(3){ transform: (translateY(-9px) rotate(-45deg));}
+
+}
+

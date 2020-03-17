@@ -1,0 +1,187 @@
+@charset "UTF-8";
+a:hover {
+  text-decoration: none; }
+
+body {
+  font-family: "Lato-Regular", Arial, sans-serif; }
+
+.header {
+  background-color: #006665; }
+
+.logo__link {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Lato-Bold", Arial, sans-serif;
+  font-size: 32px;
+  border-bottom: 1px solid transparent; }
+  .logo__link:hover {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff; }
+
+.menu {
+  font-size: 18px; }
+
+.navbar-dark .navbar-toggler {
+  border: none; }
+  .navbar-dark .navbar-toggler:focus {
+    outline: none; }
+
+.navbar-toggler {
+  padding: 0; }
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+  border-bottom: 1px solid transparent; }
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff; }
+
+.navbar-dark .navbar-toggler-icon {
+  background: none; }
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    position: absolute;
+    background-color: #006665;
+    top: 100%;
+    margin-top: 20px;
+    right: 0;
+    text-align: center;
+    width: auto !important;
+    z-index: 5; } }
+
+.menu-mobile {
+  height: 30px;
+  width: 40px;
+  position: relative;
+  margin: auto;
+  border: 5px solid transparent;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  cursor: pointer; }
+
+.bar {
+  height: 2px;
+  width: 30px;
+  display: block;
+  margin: 7px auto;
+  position: relative;
+  background-color: #fff;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s; }
+
+.menu-mobile-active:nth-of-type(1) {
+  -webkit-transform: translateY(9px) rotate(45deg);
+      -ms-transform: translateY(9px) rotate(45deg);
+          transform: translateY(9px) rotate(45deg); }
+
+.menu-mobile-active:nth-of-type(2) {
+  opacity: 0; }
+
+.menu-mobile-active:nth-of-type(3) {
+  -webkit-transform: translateY(-9px) rotate(-45deg);
+      -ms-transform: translateY(-9px) rotate(-45deg);
+          transform: translateY(-9px) rotate(-45deg); }
+
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url("../fonts/Lato-Regular.eot");
+  src: local("☺"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype"), url("../fonts/Lato-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url("../fonts/Lato-Bold.eot");
+  src: local("☺"), url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.ttf") format("truetype"), url("../fonts/Lato-Bold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.competition-table {
+  overflow-y: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
+  .competition-table__item {
+    min-width: 200px;
+    max-width: 200px; }
+  .competition-table__text {
+    height: 30px;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px 0;
+    border: 1px solid black; }
+  .competition-table__small {
+    height: 5px; }
+  .competition-table__medium {
+    height: 15px; }
+  .competition-table__full-size {
+    height: 30px; }
+  .competition-table__item-wrap {
+    position: relative; }
+
+.spacer__item {
+  position: absolute;
+  content: '';
+  display: block; }
+
+.spacer__shot {
+  height: 1px;
+  width: 12px;
+  background-color: black; }
+
+.spacer__long {
+  height: 50%;
+  width: 1px;
+  background-color: black; }
+
+.spacer__long_bottom {
+  height: 50%;
+  width: 1px;
+  background-color: black;
+  bottom: 13px;
+  right: -12px; }
+
+.spacer__shot_top {
+  top: 14px;
+  right: -12px; }
+
+.spacer__long_top {
+  top: 14px;
+  right: -12px; }
+
+.spacer__shot_bottom {
+  bottom: 13px;
+  right: -12px; }
+
+.spacer__shot_center {
+  top: 47%;
+  right: -24px; }
+
+.footer {
+  background-color: #006665; }
+
+.footer-year {
+  color: #ffffff;
+  font-size: 18px; }
