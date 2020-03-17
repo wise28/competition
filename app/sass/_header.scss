@@ -9,6 +9,7 @@ body {
 }
 .header {
   background-color: $color_bg;
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,0.3);
 }
 .logo__link {
   color: $color_white;

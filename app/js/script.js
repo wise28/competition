@@ -1,12 +1,18 @@
 $( document ).ready(function() {
-   $('.menu-mobile').click( function(){
-       $('.bar').toggleClass('menu-mobile-active');
-   });
 
-   $(document).on('click', function(e){
-      console.log(e.target.className);
-      if($(this).className !== 'menu-mobile'){
-         $('.bar').removeClass('menu-mobile-active');
-      }
-   });
+    $('.navbar-toggler').click( function(){
+        $('.bar').toggleClass('menu-mobile-active');
+
+    });
+
+    $(document).on('click', function(event){
+        let target = event.target;
+
+
+        if((!target.classList.contains('bar') && !$('.navbar-toggler').hasClass('collapsed')) && target.tagName != 'A'){
+            $('.navbar-toggler').click();
+            return;
+        }
+    });
+
 });
